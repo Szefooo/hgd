@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(pobrane.jpg);
+            margin: 0;
+            padding: 0;
+            color: #495057;
+        }
+
+
+        header {
+            background-color: #ff0019;
+            color: rgb(13, 109, 13);
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #da0a0a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        h2 {
+            color: #dc3545;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Animacje */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="animated">
+        <h1>Wesołych Świąt!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Popularne Kolędy.html">Popularne Kolędy</a></li>
+            <li><a href="Galeria Świąteczna.html">Galeria Świąteczna</a></li>
+            <li><a href="Gry Świąteczne.html">Gry Świąteczne</a></li>
+            <li><a href="Świąteczne Smakołyki.html">Świąteczne Smakołyki</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <footer id="kontakt" class="animated">
+        <p>Twórcy: Kacper Kowalczyk</p>
+    </footer>
+</body>
+
+</html>

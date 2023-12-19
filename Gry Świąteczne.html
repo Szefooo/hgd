@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #495057;
+        }
+
+        header {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        h2 {
+            color: #dc3545;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Animacje */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    
+    
+    @media screen and (max-width: 400px) 
+        .inline {
+            display: block;
+        }
+        
+        #choose, #players, #resert_div {
+            width: 100%;
+        }
+        #statement
+    {
+        max-width: 450px;
+        height: 150px;
+        margin: 50px auto;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        background-color: white;
+    }
+}
+    
+    .inline {
+        display: inline-block;
+        top: 0;
+        vertical-align: top;
+    }
+    
+    #choose, #players, #resert_div {
+        width: 400px;
+        height: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px 0;
+        margin: 7px 0;
+        background-color: white;
+    }
+    
+    #one_player, #two_players, #reset {
+        padding: 5px;
+    }
+    
+    #play_with, #you_choose {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+    table{
+        max-width: 450px;
+        max-height: 450px;
+        margin: 5px auto;
+    }
+    
+    td
+    {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 50px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    #helper
+    {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="animated">
+        <h1>Wesołych Świąt!</h1>
+    </header>
+    <article>
+        <h3>Świąteczne Kółko i krzyżyk</h3>
+        <h4>Zasady: Gracze obejmują pola na przemian dążąc do objęcia trzech pól w jednej linii, przy jednoczesnym uniemożliwieniu tego samego przeciwnikowi.
+            Pole może być objęte przez jednego gracza i nie zmienia swego właściciela przez cały przebieg gry.
+            W najbardziej popularnej w Polsce wersji gra odbywa się na polu o wymiarach 3x3.
+        </h4>
+        <body> 
+            <div class="inline">
+                <div id="players">
+                    <h3>Jak chcesz zagrać?</h3>
+                    <button id="one_player">Zagraj z komputerem</button>
+                    <button id="two_players">Zagraj z inną osobą</button>
+                    <div id="play_with"></div>
+                </div>
+                
+                <div id="choose">
+                    <h3>Wybierz O lub X:</h3>
+                    <button id="X">X</button>
+                    <button id="zero">O</button>
+                    <div id="you_choose"></div>
+                </div>
+                
+                <div id="resert_div">
+                    <button id="reset">Zagraj jeszcze raz!</button>
+                </div>
+            </div>
+            <div class="inline">
+                <table>
+                    <!--<th> Kółko - krzyżyk </th>-->
+                    <tr><td id="jeden"></td><td id="dwa"></td><td id="trzy"></td></tr>
+                    <tr><td id="cztery"></td><td id="piec"></td><td id="szesc"></td></tr>
+                    <tr><td id="siedem"></td><td id="osiem"></td><td id="dziewiec"></td></tr>
+                </table>
+                
+                <div id="statement">Wynik gry:</div>
+            </div>
+        </body>
+    </article>
+
+    <!-- Dodaj sekcje z grami, przepisami, i innymi elementami według potrzeb -->
+
+    <footer id="kontakt" class="animated">
+        <p>Twórcy: Kacper Kowalczyk</p>
+    </footer>
+</body>
+
+</html>

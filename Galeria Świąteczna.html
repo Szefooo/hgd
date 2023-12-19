@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #495057;
+        }
+
+        header {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        h2 {
+            color: #dc3545;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Animacje */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Świąteczna Galeria Zdjęć</h1>
+    </header>
+
+    <section>
+        <figure>
+            <img src="choinka.png" alt="Choinka">
+            <figcaption>Urocza choinka</figcaption>
+        </figure>
+
+        <figure>
+            <img src="prezenty.png" alt="Prezenty">
+            <figcaption>Kolorowe prezenty</figcaption>
+        </figure>
+
+        <figure>
+            <img src="ozdoby.png" alt="Ozdoby świąteczne">
+            <figcaption>Świąteczne ozdoby</figcaption>
+        </figure>
+
+        <figure>
+            <img src="ciasteczka.png" alt="Ciasteczka piernikowe">
+            <figcaption>Ciasteczka piernikowe</figcaption>
+        </figure>
+
+        <figure>
+            <img src="śnieg.png" alt="Śnieg">
+            <figcaption>Zimowy krajobraz</figcaption>
+        </figure>
+
+        <figure>
+            <img src="mikołaj.png" alt="Święty Mikołaj">
+            <figcaption>Święty Mikołaj</figcaption>
+        </figure>
+
+        <figure>
+            <img src="kominek.png" alt="Kominek">
+            <figcaption>Kominek w świątecznej atmosferze</figcaption>
+        </figure>
+    </section>
+    <footer id="kontakt" class="animated">
+        <p>Twórcy: Kacper Kowalczyk</p>
+    </footer>
+</body>
+
+</html>
